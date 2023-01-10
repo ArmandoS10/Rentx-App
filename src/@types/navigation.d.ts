@@ -4,10 +4,22 @@ export declare global {
       Home: {
         name: string;
       };
-      CarDetails: undefined;
-      Scheduling: undefined;
-      SchedulingDetails: undefined;
-      SchedulingComplete: undefined;
+      CarDetails: {
+        car: CarDTO;
+      };
+      Scheduling: {
+        car: CarDTO;
+      };
+      SchedulingDetails: {
+        car: CarDTO;
+        dates: string[];
+      };
+      SchedulingComplete: {
+        car: CarDTO;
+      };
+      MyCars: {
+        car: CarDTO;
+      };
     }
   }
 }
